@@ -8,7 +8,7 @@ class GameEntity extends SpriteAnimationComponent
   late String spriteSheetName;
   late final SpriteSheet spriteSheet;
   late Vector2 dimensions;
-  GameEntity(this.spriteSheetName, this.dimensions) : super();
+  GameEntity(this.spriteSheetName, this.dimensions) : super(size: dimensions);
 
   @override
   Future<void>? onLoad() async {
